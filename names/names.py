@@ -21,6 +21,8 @@ for name_1 in names_1:
             duplicates.append(name_1)
 '''
 # Above runtime = 10.09481143951416 seconds
+# Above runtime complexity = O(n^2) || O(n) because the loop executes n times,
+#                                      O(n^2) because the loop is nested.
 
 '''
 I think we can use a binary search tree for this problem because
@@ -49,6 +51,7 @@ for name_2 in names_2:
         duplicates.append(name_2)
 
 # Improved runtime = 0.25955724716186523 seconds
+# Improved runtime complexity = O(2n) || 2n because 2 loops execute n times
 
 end_time = time.time()
 print (f"{len(duplicates)} duplicates:\n\n{', '.join(duplicates)}\n\n")

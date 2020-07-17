@@ -36,24 +36,6 @@ buffer.get()   # should return ['d', 'e', 'f']
 # Ring Buffer
 # 1.) Fixed size
 # 2.) When full, new element added, the oldest is overwritten
-'''
-class RingBuffer:
-    # Guessing capacity is the max len of items in the array
-    def __init__(self, capacity):
-        self.capacity = capacity
-        self.data = []
-
-    def append(self, item):
-        self.data.append(item)
-        if len(self.data) == self.capacity:
-            self.cur = 0
-        else:
-            self.data[self.cur]= item
-            self.cur = (self.cur + 1) % self.capacity
-
-    def get(self):
-        pass
-'''
 
 class RingBuffer:
     # Guessing capacity is the max len of items in the array
